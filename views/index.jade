@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  nav#menu
+    ul
+      li: a(href="#intro") Inicio
+      li: a(href="#servicios") Servicios
+      li: a(href="#renta") Renta
+      li: a(href="#contacto") Contacto
+
+  #pages
+    #intro.page.fullheight
+      #animation
+      a.play(href="#") Play
+      #reel.iframe-wrapper
+        iframe.fullheight(src="//player.vimeo.com/video/88529793?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;api=1", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+
+    #aboutus.page
+      .description
+        h2 Specola
+        p.
+          Spécola es una productora de video digital de servicio completo ubicada en Tijuana. Surge del interés y esfuerzo de los integrantes por establecer una entidad que logre la visión creativa que cada proyecto demande, ya sea propio o del cliente, con un nivel de calidad y profesionalismo que exprese la pasión que tenemos por el cine.
+        p.
+          Reconocemos el gran impacto que tiene el medio audiovisual y valoramos cada oportunidad para convertir una visión en un producto que destile la esencia de la misma.
+
+
+    #servicios.page
+      h1 Servicios
+      .text
+        h2 Producción de video digital
+        p Desde desarrollo de concepto y preproducción, hasta posproducción y entrega del producto en el formato que se requiera.
+        p Tenemos amplia experiencia produciendo todo tipo de video que incluye:
+
+        ul.squares
+          li.comercial: span Video comercial
+          li.institucional: span Videos institucionales
+          li.cine: span Cine documental y ficción
+          li.registro: span Registro de eventos
+
+        p Contamos con lo más reciente en tecnología de video digital, estabilización, audio y posproducción, y consideramos una prioridad mantenernos actuales.
+        p.
+          En rodaje podemos grabar hasta resolución de 5k con cámara profesional Red Epic, utilizando estabilizador SteadyCam que ofrece el mejor rendimiento.<br>
+          Manejamos un equipo de posproducción basado en computadoras Apple Macintosh.
+
+    #renta.page
+      h1 Renta de equipo
+      ul.fulllist
+        li.square.red: span: a(href="http://www.red.com/products/epic") Cámara Red Epic y Clutch Shoulder Rig
+        li.square.zephyr1: span: a(href="http://www.tiffen.com/steadicam_zephyr.html") Steadicam Zephyr
+        li.square.zephyr2: span: a(href="http://www.tiffen.com/steadicam_zephyr.html") Steadicam Zephyr
+        li.square.arri: span: a(href="http://www.arri.com/lighting/lighting_equipment/lampheads/lighting_kits/tungsten_kits/softbank_iv_plus_kit/") Kit de luces Arri
+
+      .text
+        p Ademas de:
+        ul
+          li: a(href="http://gopro.com/cameras/hd-hero3-white-edition") GoPro Hero 3
+          li: a(href="http://www.usa.canon.com/cusa/consumer/products/cameras/slr_cameras/eos_6d") Canon 6d
+          li Lentes Canon y Carl Zeiss
+        p Para precios de renta favor de contactarnos por teléfono o correo electrónico.
+
+    #contacto.page
+      h1 Contacto
+      .text
+        h2 Preguntas o comentarios
+        p
+          span.email: a(href="mailto:info@specola.mx") info@specola.mx
+          span.phone (664) 2925419
+
+        h2 Integrantes
+        p.member
+          span.name Adrian Durazo
+          span.position Director General<br>
+        p.member
+          span.name Ricardo Silva
+          span.position Producción y Dirección<br>
+        p.member
+          span.name Jorge Sanders
+          span.position Diseño y Posproducción
+        p.member
+          span.name Alejandro Montalvo
+          span.position Director de Fotografía
+

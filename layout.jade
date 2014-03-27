@@ -1,0 +1,32 @@
+doctype html
+html.no-js
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+    meta(property="og:title", content="")
+    meta(property="og:site_name", content="")
+    meta(property="og:url", content="")
+    meta(property="og:image", content="")
+    meta(property="og:type", content="website")
+    meta(property="og:description", content="")
+    title= title
+    != css('main')
+    != js('modernizr')
+    script.
+      WebFontConfig = {
+        google: { families: [  ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })()
+  body
+    block content
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+    != js('main')
