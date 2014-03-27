@@ -9,7 +9,7 @@ class Main
     do @setup
 
   setup: =>
-
+    setInterval (=> @window.resize()), 100
 
   viewport: ->
     if typeof window.innerWidth is 'undefined'
