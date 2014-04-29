@@ -1,11 +1,36 @@
 extends layout
 
 block content
-  a#last-year.buzz-out(href="//2013.amfmf.com")
-    span.hand ☜
-    span.text Last year's AMF
-  a#event.wobble-top(href="https://www.facebook.com/events/726790910698788")
-    img(src="/img/event.png")
-  #tattoos
-  video(autoplay, loop, poster="/img/video.jpg")
-    source(src=video, type="video/mp4")
+
+
+  #video(data-path="/", data-marker)
+    .iframe-wrapper
+      .iframe-height(style="padding-top:56%")
+        iframe(src="//player.vimeo.com/video/93236872?api=1&amp;player_id=player_1&amp;color=ffffff&amp;autoplay=#{locals.initial ? 0 : 1}", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+  #all
+    .text
+      h2 Festival Info
+      p.
+        Castillos del Mar<br>
+        Carretera Libre Tijuana – Ensenada km 29.5<br>
+        22710 Rosarito, Baja California Sur, Mexico
+
+      p.
+        Apto para todas las edades<br>
+        Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito, te dejan enfrente del venue. Se encuentran en la calle Madero, entre las calles 5ta. y 6ta.
+
+      p.
+        Niños menores de 5 años no pagan<br>
+        Puertas abren a las 12:00 del día<br>
+        Habrá Guardarropa
+
+    .tickets
+      a(href="https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777") Tickets
+
+  //- a#last-year.buzz-out(href="//2013.amfmf.com")
+  //-   span.hand ☜
+  //-   span.text Last year's AMF
+  //- a#event.wobble-top(href="https://www.facebook.com/events/726790910698788")
+  //-   img(src="/img/event.png")
+  //- #tattoos
