@@ -20,16 +20,12 @@ class Main
   loadDetail: (ctx, next) =>
     $detail = $('#detail')
     if $detail.length and not $detail.is(':empty')
-      debugger
       @container.addClass 'transition'
       delay = 500
     if ctx.state.data
-      debugger
       setTimeout next, delay or 1
     else
-      debugger
       $.get ctx.pathname, (data) =>
-        debugger
         ctx.state.data = data
         ctx.save()
         setTimeout next, delay or 1
@@ -45,7 +41,8 @@ class Main
     @container.removeClass 'transition'
 
   hideDetail: (ctx, next) =>
-    @container.fadeOut()
+    @container.fadeOut =>
+      $('#detail').empty()
 
   layout: (e) =>
     h = @viewport().height
