@@ -30,7 +30,7 @@ a
 #lineup
 
   margin 30px auto
-
+  position relative
   text-align center
   font-size 68px
   a
@@ -89,6 +89,32 @@ a
           text-align right
         &:nth-child(even)
           text-align left
+
+  &:before
+    content ""
+    width 120px
+    height 120px
+    background-image url("../img/tj.svg")
+    background-size contain
+    background-repeat no-repeat
+    display block
+    margin 20px auto
+    position absolute
+    bottom 220px
+    left 80px
+
+  &:after
+    content ""
+    width 120px
+    height 120px
+    background-image url("../img/ojala.svg")
+    background-size contain
+    background-repeat no-repeat
+    display block
+    margin 20px auto
+    position absolute
+    bottom 20px
+    right 40px
 
 
 @-webkit-keyframes bgone {
@@ -247,6 +273,7 @@ a
         font-size 32px
     .festival-site
       width 100%
+      position relative
       &:after
         content ""
         width 480px
@@ -256,9 +283,22 @@ a
         background-repeat no-repeat
         display block
         margin 20px auto
+      &:before
+        content ""
+        width 120px
+        height 120px
+        background-image url("../img/foot.svg")
+        background-size contain
+        background-repeat no-repeat
+        display block
+        margin 20px auto
+        position absolute
+        bottom 0px
+        left -120px
 
   .tickets
     position relative
+    margin 0 0 20px
     &:after
       content ""
       width 120px
@@ -272,6 +312,9 @@ a
       right 0
       position absolute
       z-index -1
+
+    a
+      font-weight bold
 
   h1.when
     font-size 48px
@@ -294,6 +337,13 @@ a
     font-weight normal
     font-size 28px
 
+.indio
+  background-image url("../img/indio.svg")
+  background-size contain
+  width 160px
+  height 65px
+  display block
+  margin 0 auto
 
 footer
   box-sizing border-box
