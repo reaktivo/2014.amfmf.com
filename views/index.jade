@@ -2,35 +2,57 @@ extends layout
 
 block content
 
+  script.
+    window.AMFLINEUP = !{JSON.stringify(lineup)}
 
-  #video(data-path="/", data-marker)
-    .iframe-wrapper
-      .iframe-height(style="padding-top:56%")
-        iframe(src="//player.vimeo.com/video/93236872?api=1&amp;player_id=player_1&amp;color=ffffff&amp;autoplay=#{locals.initial ? 0 : 1}", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+  #header(data-path="/", data-marker)
+    img(src="/img/amf2014.png")
 
-  #all
-    .text
-      h2 Festival Info
-      p.
-        Castillos del Mar<br>
-        Carretera Libre Tijuana – Ensenada km 29.5<br>
-        22710 Rosarito, Baja California Sur, Mexico
+  #lineup(data-path="/lineup", data-marker)
+    .bands
+      .row
+        a(href="/gonjasufi") Gonjasufi
+        a(href="/bleached") Bleached
+        a(href="/pointloma") Point Loma (Bostich)
+      .row
+        a(href="/lasrobertas") Las Robertas
+        a(href="/fuetebillete") Fuete Billete
+        a(href="/lumerians") Lumerians
+      .row
+        a(href="/clubz") Clubz
+        a(href="/santos") Santos
+        a(href="/latenitehowl") Late Nite Howl
+      .row
+        a(href="/gmrm") Ghost Magnet Roach Motel
+      .row
+        a(href="/warmplaces") Warm Places
+        a(href="/batwingsvsskrapez") Batwings vs Skrapez
+      .row
+        a(href="/systemerror") System Error
+        a(href="/brunodario") Bruno Darío
+      .row
+        a(href="/cesarcoronado") César Coronado
+        a(href="/ladrones") L.A. Drones
+      .row
+        a(href="/czar") Czar
+        a(href="/tolo") Tolo
+        a(href="/schuy") S Chuy
+    .other
+      .row
+        :markdown
+          ### Cocina Central Chefs:
+          [Alberto Cancino](/albertocancino), [Jorge L. García](/chido), [Martín Vargas](/marginvargas) y [Paty Estrada](/patyestrada)
+      .row
+        :markdown
+          ### Music Makers Hack Lab
+          Leslie García y Michael Trigilio
 
-      p.
-        Apto para todas las edades<br>
-        Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito, te dejan enfrente del venue. Se encuentran en la calle Madero, entre las calles 5ta. y 6ta.
+  #detail-container(style="display:none")
+    block detail
+      #detail
+    .bg
+    .bg
 
-      p.
-        Niños menores de 5 años no pagan<br>
-        Puertas abren a las 12:00 del día<br>
-        Habrá Guardarropa
 
-    .tickets
-      a(href="https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777") Tickets
-
-  //- a#last-year.buzz-out(href="//2013.amfmf.com")
-  //-   span.hand ☜
-  //-   span.text Last year's AMF
-  //- a#event.wobble-top(href="https://www.facebook.com/events/726790910698788")
-  //-   img(src="/img/event.png")
-  //- #tattoos
+prepend scripts
+  script(src="http://a.vimeocdn.com/js/froogaloop2.min.js")

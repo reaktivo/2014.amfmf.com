@@ -1,4 +1,5 @@
 doctype html
+include shoutouts.txt
 html.no-js
   head
     meta(charset="utf-8")
@@ -16,7 +17,7 @@ html.no-js
     != js('modernizr')
     script.
       WebFontConfig = {
-        google: { families: [ 'Amatic+SC:700' ] }
+        google: { families: [ 'Amatic+SC:400,700' ] }
       };
       (function() {
         // Webfonts

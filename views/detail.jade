@@ -1,0 +1,14 @@
+extends index
+
+block detail
+  #detail
+    h1= detail.name
+    img(src="/media/#{detail.slug}.jpg")
+    .text
+      p= detail.bio
+    .controls
+      a.prev(href="/" + prev.slug): span= prev.name
+      a.next(href="/" + next.slug): span= next.name
+
+append scripts
+  script. $('#detail-container').show()
