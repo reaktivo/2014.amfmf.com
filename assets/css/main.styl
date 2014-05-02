@@ -229,3 +229,81 @@ a
     .text
       bottom -400px
       opacity 0
+
+
+#more-info
+  width 768px
+  margin 0 auto
+  text-align center
+
+  .places
+    margin 40px 0
+    .site
+      margin 20px 0
+      width 50%
+      display inline-block
+      h4
+        font-weight bold
+        font-size 32px
+    .festival-site
+      width 100%
+      &:after
+        content ""
+        width 480px
+        height 8px
+        background-image url("../img/lineh.svg")
+        background-size 100% 100%
+        background-repeat no-repeat
+        display block
+        margin 20px auto
+
+  .tickets
+    position relative
+    &:after
+      content ""
+      width 120px
+      height 120px
+      background-image url("../img/tickets.svg")
+      background-size contain
+      background-repeat no-repeat
+      display block
+      margin 20px auto
+      left 0
+      right 0
+      position absolute
+      z-index -1
+
+  h1.when
+    font-size 48px
+    &:after
+      content ""
+      width 480px
+      height 8px
+      background-image url("../img/lineh.svg")
+      background-size 100% 100%
+      background-repeat no-repeat
+      display block
+      margin 20px auto
+
+  h1
+    font-size 48px
+  h3
+    font-size 32px
+    font-weight bold
+  p
+    font-weight normal
+    font-size 28px
+
+
+footer
+  box-sizing border-box
+  padding 40px
+  font-size 38px
+  line-height 2.4em
+  max-width 768px
+  margin 0 auto
+  a
+    float left
+    text-decoration none
+  a:nth-child(even)
+    float right
