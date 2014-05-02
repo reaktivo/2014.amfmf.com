@@ -52,7 +52,7 @@ a
       .row:nth-child(5)
         font-size 65%
       .row:nth-child(6)
-        font-size 70%
+        font-size 55%
       .row:nth-child(7)
         font-size 56%
       .row:nth-child(8)
@@ -127,6 +127,15 @@ a
    to { background-position 320px 640px }
 }
 
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 #detail-container
   position fixed
   top 0
@@ -137,7 +146,11 @@ a
   z-index 99
 
   #detail
-    position relative
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
     z-index 100
     .close
       width 80px
@@ -153,6 +166,8 @@ a
       top 40px
       left 40px
       z-index 666
+      -webkit-transition transform ease-in-out 0.3s
+      transition transform ease-in-out 0.3s
     h1
       font-size 72px
       text-align center
@@ -160,15 +175,19 @@ a
       position relative
       -webkit-transition all ease-in-out 0.3s
       transition all ease-in-out 0.3s
-    img
-      display block
-      margin -40px auto
-      max-width 80%
+    .image
+      background-size contain
+      background-repeat no-repeat
+      background-position center center
+      position absolute
+      top 120px
+      left 120px
+      right 120px
+      bottom 120px
       -webkit-transform rotate(-2deg)
       transform rotate(-2deg)
       -webkit-transition all ease-in-out 0.3s
       transition all ease-in-out 0.3s
-      pointer-events none
     .text
       font-size 32px
       max-width 40%
@@ -244,7 +263,7 @@ a
       opacity 0
       -webkit-transform scale(3)
       transform scale(3)
-    img
+    .image
       -webkit-transform rotate(4deg) scale(0.5)
       transform rotate(4deg) scale(0.5)
       opacity 0
@@ -255,6 +274,12 @@ a
     .text
       bottom -400px
       opacity 0
+
+    .close
+      -webkit-animation-name rotate
+      -webkit-animation-duration 2s
+      -webkit-animation-iteration-count infinite
+      -webkit-animation-timing-function linear
 
 
 #more-info

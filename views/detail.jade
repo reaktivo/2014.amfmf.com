@@ -2,11 +2,12 @@ extends index
 
 block detail
   #detail
-    a.close(href="/") Close
+    a.close.grow-rotate(href="/") Close
     h1= detail.name
-    img(src="/media/#{detail.slug}.jpg")
+    .image(style="background-image: url(/media/#{detail.slug}.jpg)")
     .text
       p= detail.bio
+
     .controls
       a.prev(href="/" + prev.slug): span= prev.name
       a.next(href="/" + next.slug): span= next.name
