@@ -30,7 +30,7 @@ module.exports =
   wheretosleep: m """
     ##Where to sleep
     Hotel Corona Plaza:
-    Base price of $35.00 dólares for double occupation room.<br>
+    Base price of $35.00 USD + taxes for double occupation room.<br>
     Room for four persons is $55 USD + taxes.<br>
     June 14th to 16th
     """

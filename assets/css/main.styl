@@ -40,13 +40,26 @@ a
     width 100%
     margin 0 auto
     pointer-events none
+  .splash
+    display block
+    width 100%
+    height 1px
+    padding-top 63%
+    background-image url("../img/amfsplash.png")
+    background-size cover
+    @media only screen and (max-width: 767px)
+      background-image url("../img/amfsplash-sml.png")
+      padding-top 100%
+
 
 #lineup
 
   margin 30px auto
   position relative
   text-align center
-  font-size 68px
+  font-size 32px
+  @media only screen and (min-width: 768px)
+    font-size 68px
   a
     margin 0.1em 0.2em
     text-decoration none
@@ -72,6 +85,12 @@ a
       .row:nth-child(8)
         font-size 65%
   .other
+    .row
+      margin 20px
+      h3
+        font-size 80%
+        text-transform uppercase
+        font-weight normal
     @media only screen and (min-width: 768px)
       font-size 24px
       text-align center
@@ -80,6 +99,7 @@ a
         background-image url("../img/linev.svg")
         background-size contain
         background-repeat no-repeat
+        background-position center center
         content ""
         width 5px
         height 120px
@@ -90,45 +110,34 @@ a
         top 0
         margin 0 auto
       .row
+        margin 0
         width 25%
         display inline-block
         vertical-align top
         box-sizing border-box
         padding 1em
-        h3
-          font-size 80%
-          text-transform uppercase
-          font-weight normal
         &:nth-child(odd)
           text-align right
         &:nth-child(even)
           text-align left
-
-  &:before
-    content ""
-    width 120px
-    height 120px
-    background-image url("../img/tj.svg")
-    background-size contain
-    background-repeat no-repeat
-    display block
-    margin 20px auto
-    position absolute
-    bottom 220px
-    left 80px
-
-  &:after
-    content ""
-    width 120px
-    height 120px
-    background-image url("../img/ojala.svg")
-    background-size contain
-    background-repeat no-repeat
-    display block
-    margin 20px auto
-    position absolute
-    bottom 20px
-    right 40px
+  @media only screen and (min-width: 768px)
+    &:after, &:before
+      content ""
+      width 120px
+      height 120px
+      background-size contain
+      background-repeat no-repeat
+      display block
+      margin 20px auto
+      position absolute
+    &:before
+      background-image url("../img/tj.svg")
+      bottom 220px
+      left 80px
+    &:after
+      background-image url("../img/ojala.svg")
+      bottom 20px
+      right 40px
 
 
 @-webkit-keyframes bgone {
@@ -297,7 +306,8 @@ a
 
 
 #info
-  width 768px
+  @media only screen and (min-width: 768px)
+    width 768px
   margin 0 auto
   text-align center
 
@@ -305,52 +315,55 @@ a
     margin 40px 0
     .site
       margin 20px 0
-      width 50%
-      display inline-block
+      @media only screen and (min-width: 768px)
+        width 50%
+        display inline-block
       h4
         font-weight bold
         font-size 32px
     .festival-site
       width 100%
       position relative
-      &:after
-        content ""
-        width 480px
-        height 8px
-        background-image url("../img/lineh.svg")
-        background-size 100% 100%
-        background-repeat no-repeat
-        display block
-        margin 20px auto
-      &:before
-        content ""
-        width 120px
-        height 120px
-        background-image url("../img/foot.svg")
-        background-size contain
-        background-repeat no-repeat
-        display block
-        margin 20px auto
-        position absolute
-        bottom 0px
-        left -120px
+      @media only screen and (min-width: 768px)
+        &:after
+          content ""
+          width 480px
+          height 8px
+          background-image url("../img/lineh.svg")
+          background-size 100% 100%
+          background-repeat no-repeat
+          display block
+          margin 20px auto
+        &:before
+          content ""
+          width 120px
+          height 120px
+          background-image url("../img/foot.svg")
+          background-size contain
+          background-repeat no-repeat
+          display block
+          margin 20px auto
+          position absolute
+          bottom 0px
+          left -120px
 
   .tickets
     position relative
     margin 0 0 20px
-    &:after
-      content ""
-      width 120px
-      height 120px
-      background-image url("../img/tickets.svg")
-      background-size contain
-      background-repeat no-repeat
-      display block
-      margin 20px auto
-      left 0
-      right 0
-      position absolute
-      z-index -1
+    @media only screen and (min-width: 768px)
+      &:after
+        content ""
+        width 120px
+        height 120px
+        background-image url("../img/tickets.svg")
+        background-size contain
+        background-repeat no-repeat
+        display block
+        margin 20px auto
+        left 0
+        right 0
+        position absolute
+        z-index -1
 
     a
       font-weight bold
@@ -358,7 +371,7 @@ a
   h1.when
     &:after
       content ""
-      width 480px
+      width 100%
       height 8px
       background-image url("../img/lineh.svg")
       background-size 100% 100%
