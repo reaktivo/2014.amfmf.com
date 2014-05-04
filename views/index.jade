@@ -55,21 +55,26 @@ block content
     .bg
 
 
-  #more-info
+  #info
     h1.when!= str.when
-    .places
-      h1 Festival Site
-      .site.festival-site
-        h3 Castillos del Mar
-        p.
-          Carretera Libre Tijuana – Ensenada km 29.5<br>
-          22710 Rosarito, Baja California Sur, Mexico
-      .tickets
-        h1 Tickets
-        != tickets
-      .site!= str.blackbox
-      .site!= str.dientedeleon
-      .site!= str.moustache
+    .where
+      .places
+        h1 Festival Site
+        .site.festival-site
+          h3 Castillos del Mar
+          p.
+            Carretera Libre Tijuana – Ensenada km 29.5<br>
+            22710 Rosarito, Baja California Sur, Mexico
+        .tickets
+          h1 Tickets
+          != tickets
+        .site!= str.blackbox
+        .site!= str.dientedeleon
+        .site!= str.moustache
+
+    .info-box!= str.gettingthere
+    .info-box!= str.wheretosleep
+    .info-box!= str.infomore
 
 
   footer

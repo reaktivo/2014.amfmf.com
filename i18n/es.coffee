@@ -23,3 +23,22 @@ module.exports =
     Centro Entre 6ta y Madero<br>
     (Jueves a Sábado de 8pm a 2am)
     """
+  gettingthere: m """
+    ##Como llegar
+    Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito,
+    te dejan enfrente del venue. Se encuentran en la calle Madero,
+    entre las calles 5ta. y 6ta.
+    """
+  wheretosleep: m """
+    ##Donde Dormir
+    Hotel Corona Plaza:
+    Tarifa de $35.00 dólares tarifa base ocupación doble.<br>
+    Cuádruple será precio de $55 dólares + IVA<br>
+    14, 15 y 16 de Junio 2014.
+    """
+  infomore: m """
+    ##Más Info
+    Niños menores de 5 años no pagan<br>
+    Puertas abren a las 12:00 del día<br>
+    Habrá Guardarropa
+    """
