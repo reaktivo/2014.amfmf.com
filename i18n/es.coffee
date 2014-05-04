@@ -29,15 +29,23 @@ module.exports =
     te dejan enfrente del venue. Se encuentran en la calle Madero,
     entre las calles 5ta. y 6ta.
     """
-  wheretosleep: m """
-    ##Donde Dormir
+  wheretosleep: "Donde dormir"
+  hotelcoronaplaza: m """
     Hotel Corona Plaza:
     Tarifa de $35.00 dólares tarifa base ocupación doble.<br>
     Cuádruple será precio de $55 dólares + IVA<br>
     14, 15 y 16 de Junio 2014.
     """
+  hotelcastillosdelmar: m """
+    Castillos del Mar:<br>
+    Cuarto sencillo 92 USD<br>
+    Doble 110 USD<br>
+    Jr. Suite 104 USD<br>
+    reservations@castillosdelmar.com,
+    (661)&nbsp;612-1088, Código: EVENTO AMF
+    """
   infomore: m """
-    ##Más Info
+    ## Más Info
     Niños menores de 5 años no pagan<br>
     Puertas abren a las 12:00 del día<br>
     Habrá Guardarropa

@@ -27,16 +27,25 @@ module.exports =
     te dejan enfrente del venue. Se encuentran en la calle Madero,
     entre las calles 5ta. y 6ta.
     """
-  wheretosleep: m """
-    ##Where to sleep
-    Hotel Corona Plaza:
-    Base price of $35.00 USD + taxes for double occupation room.<br>
-    Room for four persons is $55 USD + taxes.<br>
-    June 14th to 16th
+  wheretosleep: "Where to Sleep"
+  hotelcoronaplaza: m """
+    Hotel Corona Plaza:<br>
+    Double room per night  35 USD + taxes<br>
+    Room for 4  per night 55 USD + taxes<br>
+    June 14th to 16th<br>
+    more info. at [hotelescorona.com](http://www.hotelescorona.com/)<br><br>
+    """
+  hotelcastillosdelmar: m """
+    Castillos del Mar:<br>
+    Single Room  92 USD<br>
+    Double Room 110 USD<br>
+    Jr. Suite 104 USD<br>
+    reservations@castillosdelmar.com,
+    (661)&nbsp;612-1088, CODE: EVENTO AMF
     """
   infomore: m """
     ## More Info
-    Kids under 5 get in free<br>
     Doors open at 12:00<br>
-    There will be cloackroom
+    Cloakroom available<br>
+    Kids under 5 get in for free
     """
