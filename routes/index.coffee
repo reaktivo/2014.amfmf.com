@@ -31,7 +31,7 @@ module.exports = (app) ->
 
   app.get /^\/(en|es)/, (req, res) ->
     res.cookie 'lang', req.params[0]
-    res.redirect req.query.url or '/'
+    res.redirect 'back'
 
   app.get "/:slug", (req, res, next) ->
     result = findDetail(req.params.slug)

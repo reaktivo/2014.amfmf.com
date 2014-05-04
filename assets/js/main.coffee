@@ -17,28 +17,31 @@ class Main
   setup: =>
     @lineup.addClass 'buzz'
 
-  loadDetail: (ctx, next) =>
+  loadDetail: (ctx, cb) =>
     $detail = $('#detail')
     if $detail.length and not $detail.is(':empty')
       @container.addClass 'transition'
       delay = 500
+    callback = =>
+      el = $("<div>")
+        .append($.parseHTML(ctx.state.data))
+        .find('#detail')
+      cb el
     if ctx.state.data
-      setTimeout next, delay or 1
+      setTimeout callback, delay or 1
     else
       $.get ctx.pathname, (data) =>
         ctx.state.data = data
         ctx.save()
-        setTimeout next, delay or 1
-
-  parseData: (data) =>
-    $("<div>").append($.parseHTML(data)).find('#detail')
+        setTimeout callback, delay or 1
 
   showDetail: (ctx, next) =>
-    $detail = @parseData ctx.state.data
-    $('#detail').replaceWith $detail
-    @container.fadeIn()
-    @layout()
-    @container.removeClass 'transition'
+    return do next unless @isValid ctx.params.slug
+    @loadDetail ctx, ($detail) =>
+      $('#detail').replaceWith $detail
+      @container.fadeIn()
+      @layout()
+      @container.removeClass 'transition'
 
   hideDetail: (ctx, next) =>
     @container.fadeOut =>
@@ -51,8 +54,9 @@ class Main
     $('.controls span', @detail).css width: h
 
   isValid: (slug) =>
+    path = "/#{slug}"
     @lineup.is ->
-      @href.indexOf(slug) is @href.length - slug.length;
+      @href.indexOf(path) is @href.length - path.length;
 
   viewport: ->
     if typeof window.innerWidth is 'undefined'
@@ -66,5 +70,5 @@ class Main
 $(document).ready ->
   window.app = new Main
   page '/', app.hideDetail
-  page '/:slug', app.loadDetail, app.showDetail
+  page '/:slug', app.showDetail
   page.start(dispatch: off)

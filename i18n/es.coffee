@@ -1,5 +1,6 @@
 m = require('marked')
 module.exports =
+  lang_link: m "[En](/en)"
   when: "Del 13 al 15 de Junio 2014"
   tickets: m """
     Preventa en línea con [Arema Tickets](https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777)
