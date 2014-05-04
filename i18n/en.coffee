@@ -22,7 +22,7 @@ module.exports =
     (Thursday – Saturday, 8pm to 2am)
     """
   gettingthere: m """
-    ##Como llegar
+    ##How to get there
     Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito,
     te dejan enfrente del venue. Se encuentran en la calle Madero,
     entre las calles 5ta. y 6ta.
