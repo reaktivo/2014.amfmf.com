@@ -36,7 +36,7 @@ module.exports =
     """
   infomore: m """
     ## More Info
-    Kids under 5 don't pay entrance fee<br>
+    Kids under 5 get in free<br>
     Doors open at 12:00<br>
     There will be cloackroom
     """
