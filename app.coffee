@@ -12,6 +12,7 @@ app.use x.favicon join(__dirname, 'public', 'favicon.ico')
 app.use x.logger('dev')
 app.use x.json()
 app.use x.urlencoded()
+app.use x.cookieParser('lorem ipmsum')
 app.use x.methodOverride()
 app.use assets(helperContext: app.locals)
 app.use app.router
@@ -21,6 +22,7 @@ if 'development' is app.get('env')
   app.use x.errorHandler()
 
 load 'routes'
+  .then 'i18n'
   .into app
 
 app.listen app.get('port'), ->

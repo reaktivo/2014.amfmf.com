@@ -19,11 +19,21 @@ module.exports = (app) ->
 
   app.locals.title = 'All My Friends Music Festival'
   app.locals.lineup = lineup
+  app.locals.lang = 'es'
+
+  app.all '*', (req, res, next) ->
+    res.locals.lang = req.cookies.lang or app.locals.lang
+    res.locals.str = app.i18n[res.locals.lang]
+    do next
 
   app.get '/', (req, res) ->
     res.render 'index'
 
-  app.get '/:slug', (req, res, next) ->
+  app.get /^\/(en|es)/, (req, res) ->
+    res.cookie 'lang', req.params[0]
+    res.redirect req.query.url or '/'
+
+  app.get "/:slug", (req, res, next) ->
     result = findDetail(req.params.slug)
     return next() unless result
     res.render 'detail', result

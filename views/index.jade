@@ -5,10 +5,10 @@ block content
   script.
     window.AMFLINEUP = !{JSON.stringify(lineup)}
 
-  #header(data-path="/", data-marker)
+  #header
     img(src="/img/amfsplash.png")
 
-  #lineup(data-path="/lineup", data-marker)
+  #lineup
     .bands
       .row
         a(href="/gonjasufi") Gonjasufi
@@ -55,7 +55,7 @@ block content
 
 
   #more-info
-    h1.when Del 13 al 15 de Junio 2014
+    h1.when!= str.when
     .places
       h1 Festival Site
       .site.festival-site
@@ -65,27 +65,10 @@ block content
           22710 Rosarito, Baja California Sur, Mexico
       .tickets
         h1 Tickets
-        :markdown
-          Preventa en línea con [Arema Tickets](https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777)
-          o en los siguientes puntos de venta:
-
-      .site
-        h4 Taquilla del Blackbox<br>
-        p.
-          Ave. Revolución<br>
-          (Lunes a Sábado de 1pm a 7pm)
-
-      .site
-        h4 Café Diente de León<br>
-        p.
-          Malecón de Playas de Tijuana<br>
-          (Martes a Domingo de 1pm a 9pm)
-
-      .site
-        h4 Moustache Bar<br>
-        p.
-          Centro Entre 6ta y Madero<br>
-          (Jueves a Sábado de 8pm a 2am)
+        != tickets
+      .site!= str.blackbox
+      .site!= str.dientedeleon
+      .site!= str.moustache
 
 
   footer

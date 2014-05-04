@@ -6,7 +6,7 @@ block detail
     h1= detail.name
     .image(style="background-image: url(/media/#{detail.slug}.jpg)")
     .text
-      p= detail.bio
+      p= detail.bio[lang]
 
     .controls
       a.prev(href="/" + prev.slug): span= prev.name
