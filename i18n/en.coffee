@@ -23,9 +23,17 @@ module.exports =
     """
   gettingthere: m """
     ##How to get there
-    Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito,
-    te dejan enfrente del venue. Se encuentran en la calle Madero,
-    entre las calles 5ta. y 6ta.
+
+    Groups of 4 can take a taxi libre from the border to the venue for 250
+    pesos or around 20 dollars. Those wanting a cheaper public transportation
+    option can take a a taxi shuttle that will only cost 14 pesos.
+
+    For this option, walk or take a taxi(50 pesos) to a street called Madero
+    between 5th and 6th street in downtown (very close to Mous Tache bar).
+    Then hop on the White and Yellow Taxis (they look like vans) for the La Gloria -
+    Rosarito Route. You can be dropped off right in front of the venue. Just make
+    sure you tell the driver where you’re going so he can tell you where to get off.
+
     """
   wheretosleep: "Where to Sleep"
   hotelcoronaplaza: m """
