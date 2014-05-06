@@ -39,14 +39,8 @@ block content
         a(href="/tolo") Tolo
         a(href="/schuy") S Chuy
     .other
-      .row
-        :markdown
-          ### Cocina Central Chefs:
-          [Alberto Cancino](/albertocancino), [Jorge L. García](/chido), [Martín Vargas](/marginvargas) y [Paty Estrada](/patyestrada)
-      .row
-        :markdown
-          ### Music Makers Hack Lab
-          Leslie García y Michael Trigilio
+      .row!= str.cocinacentral
+      .row!= str.musicmakers
 
   #detail-container(style="display:none")
     block detail

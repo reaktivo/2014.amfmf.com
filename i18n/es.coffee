@@ -8,8 +8,17 @@ module.exports =
     Online presale at [Arema Tickets](https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777)
     or you can purchase them at the following locations:
     """
+  cocinacentral: m """
+    ### Cocina Central Chefs:
+    [Alberto Cancino](/albertocancino), [Jorge L. García](/chido), [Martín Vargas](/marginvargas) y [Paty Estrada](/patyestrada)
+    """
+  musicmakers: m """
+    ### Music Makers Hack Lab
+    Leslie García y Michael Trigilio
+    [Más información](http://makers.amfmf.com)
+    """
   blackbox: m """
-    ####Taquilla del Blackbox
+    ####Taquilla del Black Box
     Ave. Revolución<br>
     (Lunes a Sábado de 1pm a 7pm)
     """
