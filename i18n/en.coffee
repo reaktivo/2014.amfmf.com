@@ -8,7 +8,7 @@ module.exports =
     """
   cocinacentral: m """
     ### Cocina Central Chefs:
-    [Alberto Cancino](/albertocancino), [Jorge L. García](/chido), [Martín Vargas](/marginvargas) y [Paty Estrada](/patyestrada)
+    [Alberto Cancino](/albertocansino), [Jorge L. García](/chido), [Martín Vargas](/martinvargas) y [Paty Estrada](/patyestrada)
     """
   musicmakers: m """
     ### Music Makers Hack Lab
