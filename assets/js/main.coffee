@@ -1,6 +1,11 @@
 #= require 'jquery.smooth-scroll'
 #= require 'jquery.transit-0.9.9'
 #= require 'page'
+#= require 'underscore'
+
+_.extend $.embedly.defaults,
+  key: '1484765558d14f12a55ec72aaf21b758'
+  query: { autoplay: yes }
 
 class Main
 
@@ -16,6 +21,8 @@ class Main
 
   setup: =>
     @lineup.addClass 'buzz'
+    $(document).on 'click', 'a.listen', @loadMusic
+    $(document).on 'click', 'a.bio', @showBio
 
   loadDetail: (ctx, cb) =>
     $detail = $('#detail')
@@ -46,6 +53,33 @@ class Main
   hideDetail: (ctx, next) =>
     @container.fadeOut =>
       $('#detail').empty()
+
+  loadMusic: (e) =>
+    e.preventDefault()
+    url = e.currentTarget.href;
+    $detail = $('#detail')
+    if $('.listen-content', $detail).is(':empty')
+      $.embedly.oembed(url).progress (data) =>
+        $('.listen-content', $detail).html(data.html)
+        @showMusic(e)
+    else
+      @showMusic(e)
+
+  showMusic: (e) =>
+    e.preventDefault()
+    $detail = $('#detail')
+    $('.bio-content', $detail).hide()
+    $('.listen-content', $detail).show()
+    $('a.bio', $detail).show()
+    $('a.listen', $detail).hide()
+
+  showBio: (e) =>
+    e.preventDefault()
+    $detail = $('#detail')
+    $('.bio-content', $detail).show()
+    $('.listen-content', $detail).hide()
+    $('a.bio', $detail).hide()
+    $('a.listen', $detail).show()
 
   layout: (e) =>
     h = @viewport().height
