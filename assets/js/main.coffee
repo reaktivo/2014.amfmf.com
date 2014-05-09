@@ -2,6 +2,7 @@
 #= require 'jquery.transit-0.9.9'
 #= require 'page'
 #= require 'underscore'
+#= require 'gallery'
 
 _.extend $.embedly.defaults,
   key: '1484765558d14f12a55ec72aaf21b758'

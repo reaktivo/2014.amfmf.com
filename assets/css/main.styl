@@ -338,7 +338,16 @@ a
     .festival-site
       width 100%
       position relative
+      .gallery
+        text-align center
+        a img
+          display inline-block
+          margin 0
+          width 50%
       @media only screen and (min-width: 768px)
+        .gallery a img
+          width 160px
+          margin 20px
         &:after
           content ""
           width 480px
