@@ -66,3 +66,29 @@ module.exports =
     Cloakroom available<br>
     Kids under 5 get in for free
     """
+  with: m """
+    ## An initiative of
+    ![](/img/with/nrmal.png)
+
+    ## Friends of the Festival
+    ![](/img/with/despachodeproyectos.png)
+    ![](/img/with/tjinchina.png)
+    ![](/img/with/turistalibre.png)
+
+    ## With the support of
+    ![](/img/with/aecontrol.png)
+
+    ## Sponsored by
+    ![](/img/with/indio.png)
+
+    ## Associated media
+    ![](/img/with/indierocks.png)
+    ![](/img/with/lifeboxset.png)
+    ![](/img/with/marvin.png)
+    ![](/img/with/mehaceruido.png)
+    ![](/img/with/noiselab.png)
+    ![](/img/with/noisey.png)
+    ![](/img/with/remezcla.png)
+    ![](/img/with/vice.png)
+    """
+

@@ -59,3 +59,30 @@ module.exports =
     Puertas abren a las 12:00 del día<br>
     Habrá Guardarropa
     """
+
+  with: m """
+    ## Una iniciativa de
+    ![](/img/with/nrmal.png)
+
+    ## Amigos del Festival
+    ![](/img/with/despachodeproyectos.png)
+    ![](/img/with/tjinchina.png)
+    ![](/img/with/turistalibre.png)
+
+    ## Con el apoyo de
+    ![](/img/with/aecontrol.png)
+
+    ## Patrocinado por
+    ![](/img/with/indio.png)
+
+    ## Medios asociados
+    ![](/img/with/indierocks.png)
+    ![](/img/with/lifeboxset.png)
+    ![](/img/with/marvin.png)
+    ![](/img/with/mehaceruido.png)
+    ![](/img/with/noiselab.png)
+    ![](/img/with/noisey.png)
+    ![](/img/with/remezcla.png)
+    ![](/img/with/vice.png)
+
+    """
