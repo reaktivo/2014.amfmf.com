@@ -67,19 +67,19 @@ module.exports =
     Kids under 5 get in for free
     """
   with: m """
+    ## Sponsored by
+    ![](/img/with/indio.png)
+
     ## An initiative of
     ![](/img/with/nrmal.png)
+
+    ## With the support of
+    ![](/img/with/aecontrol.png)
 
     ## Friends of the Festival
     ![](/img/with/despachodeproyectos.png)
     ![](/img/with/tjinchina.png)
     ![](/img/with/turistalibre.png)
-
-    ## With the support of
-    ![](/img/with/aecontrol.png)
-
-    ## Sponsored by
-    ![](/img/with/indio.png)
 
     ## Associated media
     ![](/img/with/indierocks.png)
@@ -90,5 +90,10 @@ module.exports =
     ![](/img/with/noisey.png)
     ![](/img/with/remezcla.png)
     ![](/img/with/vice.png)
+    ![](/img/with/invasionlocal.png)
+    ![](/img/with/tjconcerts.png)
+    ![](/img/with/oneheapwonder.png)
+    ![](/img/with/ohmytj.png)
+    ![](/img/with/vivapomona.png)
     """
 

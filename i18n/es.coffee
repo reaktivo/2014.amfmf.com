@@ -61,19 +61,19 @@ module.exports =
     """
 
   with: m """
+    ## Patrocinado por
+    ![](/img/with/indio.png)
+
     ## Una iniciativa de
     ![](/img/with/nrmal.png)
+
+    ## Con el apoyo de
+    ![](/img/with/aecontrol.png)
 
     ## Amigos del Festival
     ![](/img/with/despachodeproyectos.png)
     ![](/img/with/tjinchina.png)
     ![](/img/with/turistalibre.png)
-
-    ## Con el apoyo de
-    ![](/img/with/aecontrol.png)
-
-    ## Patrocinado por
-    ![](/img/with/indio.png)
 
     ## Medios asociados
     ![](/img/with/indierocks.png)
@@ -84,5 +84,9 @@ module.exports =
     ![](/img/with/noisey.png)
     ![](/img/with/remezcla.png)
     ![](/img/with/vice.png)
-
+    ![](/img/with/invasionlocal.png)
+    ![](/img/with/tjconcerts.png)
+    ![](/img/with/oneheapwonder.png)
+    ![](/img/with/ohmytj.png)
+    ![](/img/with/vivapomona.png)
     """
