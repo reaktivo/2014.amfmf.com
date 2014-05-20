@@ -80,6 +80,7 @@ module.exports =
     ![](/img/with/despachodeproyectos.png)
     ![](/img/with/tjinchina.png)
     ![](/img/with/turistalibre.png)
+    ![](/img/with/vivapomona.png)
 
     ## Associated media
     ![](/img/with/indierocks.png)
@@ -94,6 +95,5 @@ module.exports =
     ![](/img/with/tjconcerts.png)
     ![](/img/with/oneheapwonder.png)
     ![](/img/with/ohmytj.png)
-    ![](/img/with/vivapomona.png)
     """
 
