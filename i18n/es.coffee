@@ -57,37 +57,8 @@ module.exports =
     Puertas abren a las 12:00 del día<br>
     Habrá Guardarropa
     """
-
-  with: m """
-    ## Patrocinado por
-    ![](/img/with/indio.png)
-
-    ## Una iniciativa de
-    ![](/img/with/nrmal.png)
-
-    ## Con el apoyo de
-    ![](/img/with/aecontrol.png)
-    ![](/img/with/artealameda.png)
-    ![](/img/with/ayuntamientotijuana.png)
-    ![](/img/with/culinary.png)
-
-    ## Amigos del Festival
-    ![](/img/with/despachodeproyectos.png)
-    ![](/img/with/tjinchina.png)
-    ![](/img/with/turistalibre.png)
-    ![](/img/with/vivapomona.png)
-
-    ## Medios asociados
-    ![](/img/with/indierocks.png)
-    ![](/img/with/lifeboxset.png)
-    ![](/img/with/marvin.png)
-    ![](/img/with/mehaceruido.png)
-    ![](/img/with/noiselab.png)
-    ![](/img/with/noisey.png)
-    ![](/img/with/remezcla.png)
-    ![](/img/with/vice.png)
-    ![](/img/with/invasionlocal.png)
-    ![](/img/with/tjconcerts.png)
-    ![](/img/with/oneheapwonder.png)
-    ![](/img/with/ohmytj.png)
-    """
+  sponsoredby: "Patrocinado por"
+  initiativeof: "Una iniciativa de"
+  supportof: "Con el apoyo de"
+  friendsof: "Amigos del Festival"
+  associatedmedia: "Medios asociados"

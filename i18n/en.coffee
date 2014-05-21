@@ -66,37 +66,8 @@ module.exports =
     Cloakroom available<br>
     Kids under 5 get in for free
     """
-  with: m """
-    ## Sponsored by
-    ![](/img/with/indio.png)
-
-    ## An initiative of
-    ![](/img/with/nrmal.png)
-
-    ## With the support of
-    ![](/img/with/aecontrol.png)
-    ![](/img/with/artealameda.png)
-    ![](/img/with/ayuntamientotijuana.png)
-    ![](/img/with/culinary.png)
-
-    ## Friends of the Festival
-    ![](/img/with/despachodeproyectos.png)
-    ![](/img/with/tjinchina.png)
-    ![](/img/with/turistalibre.png)
-    ![](/img/with/vivapomona.png)
-
-    ## Associated media
-    ![](/img/with/indierocks.png)
-    ![](/img/with/lifeboxset.png)
-    ![](/img/with/marvin.png)
-    ![](/img/with/mehaceruido.png)
-    ![](/img/with/noiselab.png)
-    ![](/img/with/noisey.png)
-    ![](/img/with/remezcla.png)
-    ![](/img/with/vice.png)
-    ![](/img/with/invasionlocal.png)
-    ![](/img/with/tjconcerts.png)
-    ![](/img/with/oneheapwonder.png)
-    ![](/img/with/ohmytj.png)
-    """
-
+  sponsoredby: "Sponsored by"
+  initiativeof: "An initiative of"
+  supportof: "With support of"
+  friendsof: "Friends of the Festival"
+  associatedmedia: "Associated media"
