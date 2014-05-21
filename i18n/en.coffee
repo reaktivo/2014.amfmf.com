@@ -75,6 +75,9 @@ module.exports =
 
     ## With the support of
     ![](/img/with/aecontrol.png)
+    ![](/img/with/artealameda.png)
+    ![](/img/with/ayuntamientotijuana.png)
+    ![](/img/with/culinary.png)
 
     ## Friends of the Festival
     ![](/img/with/despachodeproyectos.png)

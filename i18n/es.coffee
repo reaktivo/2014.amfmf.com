@@ -5,8 +5,6 @@ module.exports =
   tickets: m """
     Preventa en línea con [Arema Tickets](https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777)
     o en los siguientes puntos de venta:
-    Online presale at [Arema Tickets](https://www.arema.com.mx/arema/arefb/FuncionesEvento.asp?PosNArr=%201777)
-    or you can purchase them at the following locations:
     """
   cocinacentral: m """
     ### Cocina Central Chefs:
@@ -69,6 +67,9 @@ module.exports =
 
     ## Con el apoyo de
     ![](/img/with/aecontrol.png)
+    ![](/img/with/artealameda.png)
+    ![](/img/with/ayuntamientotijuana.png)
+    ![](/img/with/culinary.png)
 
     ## Amigos del Festival
     ![](/img/with/despachodeproyectos.png)
