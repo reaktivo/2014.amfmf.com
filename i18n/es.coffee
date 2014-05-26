@@ -32,9 +32,14 @@ module.exports =
     """
   gettingthere: m """
     ##Como llegar
+
     Taxis blancos con amarillo, cubren la ruta La Gloria - Rosarito,
     te dejan enfrente del venue. Se encuentran en la calle Madero,
     entre las calles 5ta. y 6ta.
+
+    [Si vienes de Estados Unidos, checa los Border Shuttles con Turista libre,
+    solo $30 dlls.](http://www.turistalibre.com/p/all-my-friends-music-fest.html)
+
     """
   wheretosleep: "Donde dormir"
   hotelcoronaplaza: m """

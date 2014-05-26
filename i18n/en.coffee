@@ -33,6 +33,8 @@ module.exports =
   gettingthere: m """
     ##How to get there
 
+    [Check our Border Shuttles w/ Turista Libre only 30 dlls](http://www.turistalibre.com/p/all-my-friends-music-fest.html)
+
     Groups of 4 can take a taxi libre from the border to the venue for 250
     pesos or around 20 dollars. Those wanting a cheaper public transportation
     option can take a a taxi shuttle that will only cost 14 pesos.
