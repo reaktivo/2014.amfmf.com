@@ -36,14 +36,7 @@ module.exports =
     [Check our Border Shuttles w/ Turista Libre only 30 dlls](http://www.turistalibre.com/p/all-my-friends-music-fest.html)
 
     Groups of 4 can take a taxi libre from the border to the venue for 250
-    pesos or around 20 dollars. Those wanting a cheaper public transportation
-    option can take a a taxi shuttle that will only cost 14 pesos.
-
-    For this option, walk or take a taxi(50 pesos) to a street called Madero
-    between 5th and 6th street in downtown (very close to Mous Tache bar).
-    Then hop on the White and Yellow Taxis (they look like vans) for the La Gloria -
-    Rosarito Route. You can be dropped off right in front of the venue. Just make
-    sure you tell the driver where you’re going so he can tell you where to get off.
+    pesos or around 20 dollars.
 
     """
   wheretosleep: "Where to Sleep"
