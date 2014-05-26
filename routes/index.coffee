@@ -37,3 +37,6 @@ module.exports = (app) ->
     result = findDetail(req.params.slug)
     return next() unless result
     res.render 'detail', result
+
+  app.get '/beachparty', (req, res, next) ->
+    res.render 'beachparty'
